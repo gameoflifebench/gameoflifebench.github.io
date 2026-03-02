@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game-of-Life Bench</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <aside class="sidebar panel">
+        <p class="eyebrow">leaderboard</p>
+        <h1>game-of-life bench</h1>
+        <p class="lede">a static leaderboard for models trying to design long-lived starting boards in Conway's Game of Life</p>
+
+        <section class="stack">
+          <div class="section-label">about the benchmark</div>
+          <p>Each model proposes an initial board on an 8x8 toroidal grid.</p>
+          <p>We run each model across benchmark seeds and keep its best submission.</p>
+          <p>The score is steps until the first repeated global state.</p>
+        </section>
+
+        <section class="stack">
+          <div class="section-label">made by</div>
+          <p>Akshit Sinha</p>
+          <p><a class="sidebar-link" href="https://github.com/" target="_blank" rel="noreferrer">GitHub leaderboard repo</a></p>
+        </section>
+      </aside>
+
+      <section class="main panel">
+        <div class="panel-bar">
+          <span>bench://leaderboard</span>
+          <span id="meta">loading...</span>
+        </div>
+        <div id="leaderboard"></div>
+      </section>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
