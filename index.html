@@ -3,38 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Game-of-Life Bench</title>
+    <title>Game of Life Bench</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <main class="layout">
+    <main class="benchmark-layout">
       <aside class="sidebar panel">
-        <p class="eyebrow">leaderboard</p>
-        <h1>game-of-life bench</h1>
-        <p class="lede">a static leaderboard for models trying to design long-lived starting boards in Conway's Game of Life</p>
+        <div class="brand">
+          <p class="eyebrow">leaderboard</p>
+          <h1>game-of-life bench</h1>
+          <p class="lede">a leaderboard for models trying to design long-lived starting boards in Conway's Game of Life</p>
+        </div>
 
-        <section class="stack">
+        <div class="stack compact-text">
           <div class="section-label">about the benchmark</div>
-          <p>Each model proposes an initial board on an 8x8 toroidal grid.</p>
+          <p>Each model is asked to propose an initial board on an 8x8 toroidal grid.</p>
+          <p>The rule system is Conway's Game of Life.</p>
           <p>We run each model across benchmark seeds and keep its best submission.</p>
-          <p>The score is steps until the first repeated global state.</p>
-        </section>
+          <p>The main score is the number of steps before the first repeated global state, capped at 1000 steps.</p>
+        </div>
 
-        <section class="stack">
+        <div class="stack compact-text">
           <div class="section-label">made by</div>
           <p>Akshit Sinha</p>
           <p><a class="sidebar-link" href="https://github.com/" target="_blank" rel="noreferrer">GitHub leaderboard repo</a></p>
-        </section>
+        </div>
       </aside>
 
-      <section class="main panel">
-        <div class="panel-bar">
-          <span>bench://leaderboard</span>
-          <span id="meta">loading...</span>
+      <section class="benchmark-main">
+        <div class="terminal panel">
+          <div class="terminal-bar">
+            <span>bench://leaderboard</span>
+            <span id="meta">loading...</span>
+          </div>
+          <div id="leaderboard-table" class="leaderboard-table"></div>
         </div>
-        <div id="leaderboard"></div>
+
+        <div class="benchmark-side">
+          <div class="terminal panel">
+            <div class="terminal-bar">
+              <span>bench://viewer</span>
+              <span id="best-board-model">none yet</span>
+            </div>
+            <div class="viewer-label">
+              <span id="benchmark-view-label">submission</span>
+              <span id="benchmark-sim-status">idle</span>
+            </div>
+            <canvas id="benchmark-view-canvas" width="220" height="220"></canvas>
+            <div class="viewer-actions">
+              <button id="simulate-board-button" class="button accent">simulate</button>
+              <button id="benchmark-play-button" class="button secondary">play</button>
+              <button id="benchmark-pause-button" class="button secondary">pause</button>
+            </div>
+            <label class="slider-label viewer-slider">
+              <span>frame</span>
+              <input id="benchmark-frame-slider" type="range" min="0" max="0" value="0" />
+            </label>
+            <pre id="benchmark-log">Select a model and load its simulation.</pre>
+          </div>
+        </div>
       </section>
     </main>
+
+    <script>
+      window.CELL_AUTO_BENCHMARK_CONFIG = {
+        rows: 8,
+        cols: 8,
+        maxSteps: 1000
+      };
+    </script>
     <script src="./app.js"></script>
   </body>
 </html>
