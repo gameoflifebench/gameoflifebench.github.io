@@ -1,4 +1,915 @@
 {
-  "benchmark_count": 0,
-  "leaderboard": []
+  "generated_at": "2026-03-02T03:25:28.694969+00:00",
+  "benchmark_count": 10,
+  "leaderboard": [
+    {
+      "model": "deepseek/deepseek-r1-0528",
+      "benchmarks_run": 1,
+      "submission_score": 102,
+      "best_average_score": 20.4,
+      "median_score": 6.0,
+      "floor_score": 2,
+      "best_score": 102,
+      "best_board": [
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ]
+      ],
+      "best_seed": 3,
+      "best_run_id": "20260302T025123Z-f710fe7a",
+      "best_benchmark_id": "20260302T025518Z-98e1dc6e",
+      "latest_average_score": 20.4,
+      "trial_count": 10,
+      "visible_reasoning": true,
+      "submission_total_tokens": 3437,
+      "total_cost": 0.12379171,
+      "avg_output_tokens": 5242.6,
+      "rank": 1
+    },
+    {
+      "model": "openai/gpt-5.2",
+      "benchmarks_run": 1,
+      "submission_score": 99,
+      "best_average_score": 50,
+      "median_score": 51.5,
+      "floor_score": 9,
+      "best_score": 99,
+      "best_board": [
+        [
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0
+        ]
+      ],
+      "best_seed": 8,
+      "best_run_id": "20260302T020911Z-a9daaf26",
+      "best_benchmark_id": "20260302T020943Z-23faad1f",
+      "latest_average_score": 50,
+      "trial_count": 10,
+      "visible_reasoning": true,
+      "submission_total_tokens": 1596,
+      "total_cost": 0.189693,
+      "avg_output_tokens": 1309.2,
+      "rank": 2
+    },
+    {
+      "model": "google/gemini-3-flash-preview",
+      "benchmarks_run": 1,
+      "submission_score": 64,
+      "best_average_score": 28.4,
+      "median_score": 22.5,
+      "floor_score": 12,
+      "best_score": 64,
+      "best_board": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "best_seed": 0,
+      "best_run_id": "20260302T024957Z-075cc72a",
+      "best_benchmark_id": "20260302T024957Z-4e71907a",
+      "latest_average_score": 28.4,
+      "trial_count": 10,
+      "visible_reasoning": false,
+      "submission_total_tokens": 581,
+      "total_cost": 0.007809000000000001,
+      "avg_output_tokens": 196.0,
+      "rank": 3
+    },
+    {
+      "model": "x-ai/grok-4",
+      "benchmarks_run": 1,
+      "submission_score": 32,
+      "best_average_score": 27.4,
+      "median_score": 32.0,
+      "floor_score": 7,
+      "best_score": 32,
+      "best_board": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "best_seed": 0,
+      "best_run_id": "20260302T022402Z-b1b1e460",
+      "best_benchmark_id": "20260302T022644Z-5d0a4601",
+      "latest_average_score": 27.4,
+      "trial_count": 10,
+      "visible_reasoning": false,
+      "submission_total_tokens": 20420,
+      "total_cost": 2.8877302499999997,
+      "avg_output_tokens": 19135.5,
+      "rank": 4
+    },
+    {
+      "model": "deepseek/deepseek-v3.2",
+      "benchmarks_run": 1,
+      "submission_score": 27,
+      "best_average_score": 6.9,
+      "median_score": 2.5,
+      "floor_score": 1,
+      "best_score": 27,
+      "best_board": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "best_seed": 9,
+      "best_run_id": "20260302T024855Z-b60d5ee3",
+      "best_benchmark_id": "20260302T024917Z-455362b0",
+      "latest_average_score": 6.9,
+      "trial_count": 10,
+      "visible_reasoning": false,
+      "submission_total_tokens": 792,
+      "total_cost": 0.0027178200000000006,
+      "avg_output_tokens": 184.2,
+      "rank": 5
+    },
+    {
+      "model": "openai/gpt-4o-mini",
+      "benchmarks_run": 1,
+      "submission_score": 26,
+      "best_average_score": 4.9,
+      "median_score": 1.0,
+      "floor_score": 1,
+      "best_score": 26,
+      "best_board": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "best_seed": 5,
+      "best_run_id": "20260302T015438Z-aa524034",
+      "best_benchmark_id": "20260302T015447Z-7baebbb7",
+      "latest_average_score": 4.9,
+      "trial_count": 10,
+      "visible_reasoning": false,
+      "submission_total_tokens": null,
+      "total_cost": null,
+      "avg_output_tokens": null,
+      "rank": 6
+    },
+    {
+      "model": "anthropic/claude-sonnet-4.6",
+      "benchmarks_run": 1,
+      "submission_score": 24,
+      "best_average_score": 8.7,
+      "median_score": 7.0,
+      "floor_score": 7,
+      "best_score": 24,
+      "best_board": [
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "best_seed": 8,
+      "best_run_id": "20260302T015734Z-9a4b862e",
+      "best_benchmark_id": "20260302T015735Z-a10826c9",
+      "latest_average_score": 8.7,
+      "trial_count": 10,
+      "visible_reasoning": false,
+      "submission_total_tokens": null,
+      "total_cost": null,
+      "avg_output_tokens": null,
+      "rank": 7
+    },
+    {
+      "model": "anthropic/claude-opus-4.6",
+      "benchmarks_run": 2,
+      "submission_score": 17,
+      "best_average_score": 6.2,
+      "median_score": 4.0,
+      "floor_score": 3,
+      "best_score": 17,
+      "best_board": [
+        [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "best_seed": 3,
+      "best_run_id": "20260302T024209Z-fe2fe81b",
+      "best_benchmark_id": "20260302T024210Z-f37ae93e",
+      "latest_average_score": 6.2,
+      "trial_count": 10,
+      "visible_reasoning": false,
+      "submission_total_tokens": 604,
+      "total_cost": 0.07,
+      "avg_output_tokens": 199.0,
+      "rank": 8
+    },
+    {
+      "model": "google/gemma-3-27b-it",
+      "benchmarks_run": 1,
+      "submission_score": 9,
+      "best_average_score": 3.8,
+      "median_score": 3.0,
+      "floor_score": 1,
+      "best_score": 9,
+      "best_board": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "best_seed": 5,
+      "best_run_id": "20260302T015257Z-91555df5",
+      "best_benchmark_id": "20260302T015320Z-c6538b3e",
+      "latest_average_score": 3.8,
+      "trial_count": 10,
+      "visible_reasoning": false,
+      "submission_total_tokens": null,
+      "total_cost": null,
+      "avg_output_tokens": null,
+      "rank": 9
+    }
+  ]
 }
