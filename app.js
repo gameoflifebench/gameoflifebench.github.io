@@ -59,6 +59,8 @@ function renderLeaderboard(entries) {
         <th>rank</th>
         <th data-sort-key="provider">provider</th>
         <th data-sort-key="model_name">model</th>
+        <th data-sort-key="benchmarks_run">total runs</th>
+        <th data-sort-key="alive_count">start alive</th>
         <th data-sort-key="submission_score">max</th>
         <th data-sort-key="best_average_score">avg</th>
         <th data-sort-key="avg_output_tokens">avg tokens</th>
@@ -77,6 +79,8 @@ function renderLeaderboard(entries) {
     row.dataset.modelName = modelParts.name;
     row.dataset.model = entry.model;
     row.dataset.bestBoard = JSON.stringify(entry.best_board);
+    row.dataset.benchmarksRun = String(entry.benchmarks_run ?? 0);
+    row.dataset.aliveCount = String(countAliveCells(entry.best_board));
     row.dataset.submissionScore = String(entry.submission_score);
     row.dataset.bestAverageScore = String(entry.best_average_score);
     row.dataset.avgOutputTokens = entry.avg_output_tokens == null ? "" : String(entry.avg_output_tokens);
@@ -87,6 +91,8 @@ function renderLeaderboard(entries) {
       <td>${index + 1}</td>
       <td>${modelParts.provider}</td>
       <td>${modelParts.name}</td>
+      <td>${entry.benchmarks_run ?? 0}</td>
+      <td>${countAliveCells(entry.best_board)}</td>
       <td>${entry.submission_score}</td>
       <td>${Number(entry.best_average_score).toFixed(2)}</td>
       <td>${formatAvgOutputTokens(entry.avg_output_tokens)}</td>
@@ -307,6 +313,8 @@ function rowToEntry(row) {
     rank: Number(row.dataset.rank),
     provider: row.dataset.provider,
     model_name: row.dataset.modelName,
+    benchmarks_run: Number(row.dataset.benchmarksRun),
+    alive_count: Number(row.dataset.aliveCount),
     submission_score: Number(row.dataset.submissionScore),
     best_average_score: Number(row.dataset.bestAverageScore),
     avg_output_tokens: row.dataset.avgOutputTokens ? Number(row.dataset.avgOutputTokens) : null,
@@ -320,6 +328,8 @@ function compareEntries(a, b) {
       rank: a.rank,
       provider: splitModel(a.model).provider,
       model_name: splitModel(a.model).name,
+      benchmarks_run: a.benchmarks_run ?? 0,
+      alive_count: countAliveCells(a.best_board),
       submission_score: a.submission_score,
       best_average_score: a.best_average_score,
       avg_output_tokens: a.avg_output_tokens,
@@ -329,6 +339,8 @@ function compareEntries(a, b) {
       rank: b.rank,
       provider: splitModel(b.model).provider,
       model_name: splitModel(b.model).name,
+      benchmarks_run: b.benchmarks_run ?? 0,
+      alive_count: countAliveCells(b.best_board),
       submission_score: b.submission_score,
       best_average_score: b.best_average_score,
       avg_output_tokens: b.avg_output_tokens,
@@ -372,4 +384,15 @@ function formatCost(value) {
 
 function formatAvgOutputTokens(value) {
   return value == null || Number.isNaN(value) ? "-" : Number(value).toFixed(1);
+}
+
+function countAliveCells(board) {
+  if (!Array.isArray(board)) {
+    return 0;
+  }
+
+  return board.reduce(
+    (total, row) => total + (Array.isArray(row) ? row.reduce((sum, cell) => sum + Number(Boolean(cell)), 0) : 0),
+    0
+  );
 }
