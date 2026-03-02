@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-02T04:12:23.248234+00:00",
-  "benchmark_count": 9,
+  "generated_at": "2026-03-02T04:38:53.461796+00:00",
+  "benchmark_count": 11,
   "leaderboard": [
     {
       "model": "openai/gpt-5.1",
@@ -407,6 +407,107 @@
       "rank": 4
     },
     {
+      "model": "moonshotai/kimi-k2.5",
+      "benchmarks_run": 1,
+      "submission_score": 71,
+      "best_average_score": 23.3,
+      "median_score": 18.0,
+      "floor_score": 6,
+      "best_score": 71,
+      "best_board": [
+        [
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "best_seed": 5,
+      "best_run_id": "20260302T043658Z-8e96f824",
+      "best_benchmark_id": "20260302T043816Z-c943a644",
+      "latest_average_score": 23.3,
+      "trial_count": 10,
+      "visible_reasoning": true,
+      "submission_total_tokens": 5690,
+      "total_cost": 0.14362925,
+      "avg_output_tokens": 5463.9,
+      "rank": 5
+    },
+    {
       "model": "google/gemini-3-flash-preview",
       "benchmarks_run": 1,
       "submission_score": 64,
@@ -505,7 +606,108 @@
       "submission_total_tokens": 581,
       "total_cost": 0.007809000000000001,
       "avg_output_tokens": 196.0,
-      "rank": 5
+      "rank": 6
+    },
+    {
+      "model": "openai/gpt-oss-120b",
+      "benchmarks_run": 1,
+      "submission_score": 35,
+      "best_average_score": 18,
+      "median_score": 13.0,
+      "floor_score": 5,
+      "best_score": 35,
+      "best_board": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "best_seed": 4,
+      "best_run_id": "20260302T043429Z-4db57024",
+      "best_benchmark_id": "20260302T043433Z-27a1ba9c",
+      "latest_average_score": 18,
+      "trial_count": 10,
+      "visible_reasoning": true,
+      "submission_total_tokens": 1608,
+      "total_cost": 0.0056710599999999995,
+      "avg_output_tokens": 1189.3,
+      "rank": 7
     },
     {
       "model": "minimax/minimax-m2.5",
@@ -606,7 +808,7 @@
       "submission_total_tokens": 6442,
       "total_cost": 0.0170249,
       "avg_output_tokens": 3485.5,
-      "rank": 6
+      "rank": 8
     },
     {
       "model": "x-ai/grok-4",
@@ -707,7 +909,7 @@
       "submission_total_tokens": 20420,
       "total_cost": 2.8877302499999997,
       "avg_output_tokens": 19135.5,
-      "rank": 7
+      "rank": 9
     },
     {
       "model": "deepseek/deepseek-v3.2",
@@ -808,7 +1010,7 @@
       "submission_total_tokens": 792,
       "total_cost": 0.0027178200000000006,
       "avg_output_tokens": 184.2,
-      "rank": 8
+      "rank": 10
     },
     {
       "model": "anthropic/claude-sonnet-4.6",
@@ -909,7 +1111,7 @@
       "submission_total_tokens": 604,
       "total_cost": 0.042,
       "avg_output_tokens": 199.0,
-      "rank": 9
+      "rank": 11
     },
     {
       "model": "anthropic/claude-opus-4.6",
@@ -1010,7 +1212,7 @@
       "submission_total_tokens": 604,
       "total_cost": 0.07,
       "avg_output_tokens": 199.0,
-      "rank": 10
+      "rank": 12
     },
     {
       "model": "openai/gpt-4o-mini",
@@ -1111,7 +1313,7 @@
       "submission_total_tokens": 574,
       "total_cost": 0.0014594999999999996,
       "avg_output_tokens": 133.0,
-      "rank": 11
+      "rank": 13
     }
   ]
 }
