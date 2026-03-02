@@ -148,6 +148,50 @@ h1 {
   overflow-wrap: anywhere;
 }
 
+.author-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.author-name {
+  margin: 0;
+}
+
+.author-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  color: var(--accent-2);
+  border: 1px solid var(--line);
+  background: rgba(56, 200, 255, 0.06);
+  text-decoration: none;
+  transition: color 140ms ease, border-color 140ms ease, background-color 140ms ease, transform 140ms ease;
+}
+
+.icon-link:hover,
+.icon-link:focus {
+  color: var(--accent);
+  border-color: rgba(126, 240, 163, 0.32);
+  background: rgba(126, 240, 163, 0.1);
+  transform: translateY(-1px);
+}
+
+.icon-link svg {
+  width: 15px;
+  height: 15px;
+  fill: currentColor;
+}
+
 .button {
   border: 0;
   border-radius: 0;
