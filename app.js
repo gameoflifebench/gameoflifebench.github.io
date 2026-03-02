@@ -61,10 +61,10 @@ function renderLeaderboard(entries) {
         <th data-sort-key="model_name">model</th>
         <th data-sort-key="submission_score">max</th>
         <th data-sort-key="best_average_score">avg</th>
-        <th data-sort-key="avg_output_tokens">avg tokens</th>
         <th data-sort-key="total_cost">cost</th>
         <th data-sort-key="trial_count">total runs</th>
         <th data-sort-key="alive_count">alive cells</th>
+        <th data-sort-key="avg_output_tokens">avg tokens</th>
       </tr>
     </thead>
     <tbody></tbody>
@@ -93,10 +93,10 @@ function renderLeaderboard(entries) {
       <td>${modelParts.name}</td>
       <td>${entry.submission_score}</td>
       <td>${Number(entry.best_average_score).toFixed(2)}</td>
-      <td>${formatAvgOutputTokens(entry.avg_output_tokens)}</td>
       <td>${formatCost(entry.total_cost)}</td>
       <td>${entry.trial_count ?? 0}</td>
       <td>${countAliveCells(entry.best_board)}</td>
+      <td>${formatAvgOutputTokens(entry.avg_output_tokens)}</td>
     `;
     row.addEventListener("click", () => renderBestBoard(entry));
     if (index === 0) {
